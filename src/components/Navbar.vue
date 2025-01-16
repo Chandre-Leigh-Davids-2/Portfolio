@@ -39,10 +39,13 @@
   
   <style scoped>
   .nav {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     padding: 0.8% 1.2% 0.8% 1.2%;
     background-color: rgb(194, 194, 194);
+    margin-top:0.1%;
   }
   
   .overlay {
