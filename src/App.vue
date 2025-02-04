@@ -1,7 +1,9 @@
 <template>
   <navbar/>
   <main>
-    <router-view/>
+    <div>
+      <router-view/>
+    </div> 
   </main>
 </template>
 <script>
@@ -13,5 +15,4 @@ components:{
 }
 </script>
 
-<style src='../src/assets/CSS/style.css'>
-</style>
+<style scoped></style>

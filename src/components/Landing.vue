@@ -1,34 +1,72 @@
 <template>
-  <div class="container-fluid">
-    <div class="row p-1">
-      <div class="col-lg-5 x d-none d-lg-block">
-        <div class="box">
-          <p> Hi. I am </p>
-        </div>
-        <div class="box">
-          <p>Chandré Leigh Davids</p>
-        </div>
-        <div class="box">
-          <i class="bi bi-github"></i>
-          <i class="bi bi-linkedin"></i>
-        </div>
-      </div>
-      <div class="col-lg-7 d-none d-lg-block">
-        <div class="Landing-picture">
-          <img src="/img/icons/IMG_20240702_135344.jpg" alt="Picture of Chandré Leigh Davids">
-        </div>
-      </div>
+  <div class="container-fluid d-none d-lg-block ">
+    <!-- large screen -->
+    <div class="d-flex justify-content-center ">
+      <div class="row opacity ">
+        <div class="col-md-8 d-flex flex-column justify-content-between">
+          <!-- arrows -->
+          <div class="row d-flex justify-content-between">
+            <div class="row d-flex justify-content-between">
+              <div class="top-left arrow">
+                <img src="../assets/images/top-left.png" alt="">
+              </div>
+              <div class="top-right arrow">
+                <img src="../assets/images/top-right.png" alt="">
+              </div>
+            </div>
+          </div>
 
-      <!-- Small Screen -->
-      <div class="row x d-block d-lg-none">
-        <h1> Hi. I am </h1>
+          <!-- middle content -->
+          <div class="row">
+            <div class="col-md-3">
+              <div class="time-vertical m">{{ currentTime }}</div>
+            </div>
+            <div class="col-md-9 m">
+              <div class="m">
+                <p class="name">Chandre Leigh Davids</p>
+                <div class="box d-flex justify-content-start">
+                  <i class="bi bi-github"></i>
+                  <i class="bi bi-linkedin"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- arrows -->
+          <div class="row d-flex justify-content-between">
+            <div class="row d-flex justify-content-between">
+              <div class="top-left arrow">
+                <img src="../assets/images/bottom-left.png" alt="">
+              </div>
+              <div class="top-right arrow">
+                <img src="../assets/images/bottom-right.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Image section -->
+        <div class="col-md-4 d-flex align-content-center">
+          <div class="img">
+            <img src="../assets/images/download (1) 1.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Small Screen -->
+  <div class="container-fluid d-block d-lg-none">
+    <div class="row d-flex ">
+      <div class="x ">
+        <p>Hi. I am </p>
         <div class="box">
           <p>Chandré Leigh Davids</p>
         </div>
       </div>
-      <div class="d-block d-lg-none">
+      <div class="d-flex align-content-center">
         <div class="Landing-picture">
-          <img src="/img/icons/IMG_20240702_135344.jpg" alt="Picture of Chandré Leigh Davids">
+          <img src="../assets/images/pictureOfSelf1.png" alt="Picture of Chandré Leigh Davids">
         </div>
       </div>
       <div class="d-block d-lg-none d-flex justify-content-center">
@@ -37,71 +75,131 @@
           <i class="bi bi-linkedin"></i>
         </div>
       </div>
+      <div class="my-3">
+        <p>I am a Full Stack Developer</p>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-
-}
+  data() {
+    return {
+      currentTime: '',
+    };
+  },
+  methods: {
+    updateTime() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      this.currentTime = `${hours}:${minutes}:${seconds}`; // Fixed string template syntax
+    },
+  },
+  mounted() {
+    this.updateTime();
+    setInterval(this.updateTime, 1000); // Update the time every second
+  },
+};
 </script>
+
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 .container-fluid {
-  height: 100vh;
+  min-height: 80vh;
   width: 95vw;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: transparent;
   padding: 3%;
-  border: 2px solid #FF007F;
-  border-radius:15px;
-
-}
-.row>* {
-  display: flex;
-  justify-content: center;
+  border: 3px solid white;
+  border-radius: 15px;
 }
 
-.h1 {
-  text-align: center;
-  width: max-content;
-}
-.x {
-  margin: 0 auto;
-  /* height: 90vh; */
-  display: flex;
-  flex-direction: column;
-  /* Stack the boxes vertically */
-  justify-content: center;
-  /* Center vertically */
-  align-items: center;
-  /* Center horizontally */
+@media screen and (max-width:992px) {
+  .container-fluid {
+    min-height: 100vh;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 3%;
+    border: 3px solid white;
+    border-radius: 15px;
+  }
+
+  p {
+    text-align: center;
+  }
 }
 
-.box {
-  width: 98%;
-  /* height: 18vh; */
-  margin: 2%;
-  display: flex;
-  align-items: center;
+.opacity {
+  position: relative;
+  box-shadow: 1px 1px 2px rgb(233, 225, 225);
+  background-color: rgba(255, 255, 255, 0.496);
+  border-radius: 10px;
+  max-width: 80vw;
+  min-height: 90%;
+  padding: 2%;
+  backdrop-filter: blur(8px);
+  /* Apply blur effect to the background */
+  -webkit-backdrop-filter: blur(8px);
+  /* For Safari support */
 }
 
-.box p {
+.row {
+  width: 100%;
+}
+
+.m {
+  height: 55vh;
+}
+
+p {
   margin: 2%;
   color: white;
+  font-family: "Orbitron", serif;
+  font-size: 7vw; 
 }
 
-.box p {
-  font-size: 50px;
+.name {
+  font-size: 10vh;
+}
+
+@media screen and (max-width:1115px) {
+  .name {
+    font-size: 7vh;
+  }
+}
+
+.arrow {
+  width: 10vw;
+  height: 10vh;
+}
+
+.time-vertical {
   margin: 2%;
+  color: white;
+  font-family: "Orbitron", serif;
+  font-size: 11vh;
+  writing-mode: vertical-rl;
+  text-align: center;
+  /* Centers the text horizontally */
 }
 
 @media screen and (max-width:992px) {
   .box p {
     font-size: 5vw;
+  }
+
+  .time-vertical {
+    font-size: 8vh;
+    /* Adjust size for smaller screens */
   }
 }
 
@@ -111,16 +209,13 @@ i {
   color: white;
 }
 
-.Landing-picture {
+img {
   width: 100%;
-  /* height: 90vh; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
 }
 
-.Landing-picture img {
-  width: 70%;
-  height: 67.5%;
+.Landing-picture {
+  width: 100vw;
+  /* height: 50vh; */
 }
 </style>

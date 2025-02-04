@@ -1,5 +1,5 @@
 <template>
-  <div class="slider col-12">
+  <div class="slider col-12 mt-3">
     <div class="logos">
       <i class="lab la-github"></i>
       <i class="las la-code"></i>
@@ -33,9 +33,9 @@
     </div>
   </div>
   <div id="foot">
-      <a href="https://github.com/Chany4" target="_blank" title="click on me">
+      <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" title="click on me">
           <img src="https://chany4.github.io/images.Portfolio/images/GitHub-Mark-ea2971cee799.png" alt="gitHub" id="gitPic">
-      </a>
+      </a>  
       <p class="footer-Para"> Copyright © 2024 Chandre Leigh Davids All Rights Reserved</p>
   </div>
   

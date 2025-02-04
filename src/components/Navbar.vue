@@ -1,105 +1,42 @@
 <template>
-    <div>
-      <!-- The overlay menu -->
-      <div id="myNav" class="overlay" :style="{ width: navWidth }">
-        <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
-        <div class="overlay-content">
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+  <div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Education and Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Details</a>
+            </li>
+          </ul>
         </div>
       </div>
-  
-      <!-- The navigation bar -->
-      <div class="nav">
-        <p>This is the logo</p>
-        <span style="font-size:30px;cursor:pointer" @click="openNav">&#9776;</span>
-      </div>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    data() {
-      return {
-        navWidth: "0%" // Initial width of the navigation is 0%
-      };
-    },
-    methods: {
-      openNav() {
-        this.navWidth = "100%"; // Set the width to 100% to open the nav
-      },
-      closeNav() {
-        this.navWidth = "0%"; // Set the width back to 0% to close the nav
-      }
-    }
-  };
-  </script>
-  
-  <style scoped>
-  .nav {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding: 0.8% 1.2% 0.8% 1.2%;
-    background-color: rgb(194, 194, 194);
-    margin-top:0.1%;
-  }
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-  }
-  
-  .overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .overlay a:hover,
-  .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {
-      font-size: 20px;
-    }
-  
-    .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
-    }
-  }
-  </style>
-  
+    </nav>
+  </div>
+</template>
+<script>
+export default {
+
+}
+</script>
+<style scoped>
+nav{
+  height: 8vh;
+}
+</style>
