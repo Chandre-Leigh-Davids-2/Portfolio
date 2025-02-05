@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid">
     <h1>Contact Details</h1>
-    <div class="row mt-5">
+    <div data-aos="flip-up" class="row mt-5">
       <div class=" col-lg-12 form">
         <div id="experiment">
 
@@ -145,8 +145,19 @@
   </div>
 </template>
 <script>
-export default {
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+export default {
+  mounted() {
+    // Initialize AOS animations
+    AOS.init();
+
+    // Ensure AOS refreshes after navigation
+    this.$watch('$route', () => {
+      AOS.refreshHard();
+    });
+  },
 }
 </script>
 <style scoped>

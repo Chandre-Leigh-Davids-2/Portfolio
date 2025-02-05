@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <h1>Statistics</h1>
         <div class="row padding">
-            <div class="col-xl-4 d-flex flex-column align-content-center col-lg-6">
+            <div data-aos="fade-right" class="col-xl-4 d-flex flex-column align-content-center col-lg-6">
                 <div class="box Landing-picture d-none d-lg-block">
                     <img src="../assets/images/pictureOfSelf1.png" alt="picture of myself">
                 </div>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="col-xl-3 col-lg-6  d-flex flex-column align-content-center">
-                <div class="box pop mt-4 brief">
+                <div data-aos="fade-down" class="box pop mt-4 brief">
                     <div class="col">
                         <h3>Brief</h3>
                         <ul>
@@ -49,7 +49,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="box pop about my-2">
+                <div data-aos="fade-up" class="box pop about my-2">
                     <div class="col">
                         <h3>About</h3>
                         <p class="p">I am Chandre Leigh Davids, a Full Stack Developer with a real passion for creating
@@ -74,7 +74,7 @@
 
                 </div>
             </div>
-            <div class="col-xl-5 d-flex flex-column align-content-center">
+            <div data-aos="fade-left" class="col-xl-5 d-flex flex-column align-content-center">
                 <div class="box pop mt-4 resume">
                     <div class="row">
                         <div class="col">
@@ -149,7 +149,7 @@
             <div class="row">
                 <h1>Badges Obtained</h1>
             </div>
-            <div class="row">
+            <div data-aos="fade-up" class="row">
                 <div class="col mt-5">
                     <div class="box d-flex justify-content-center">
                         <div class="scroll">
@@ -169,6 +169,9 @@
 
 </template>
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import mondale from '../assets/images/mondaleBadge.jpeg'
 import studio from '../assets/images/LC Studio.jpeg'
 import LCA from '../assets/images/LCA.jpeg'
@@ -233,7 +236,16 @@ export default {
         closeModal() {
             this.showModal = false;
         }
-    }
+    },
+  mounted() {
+    // Initialize AOS animations
+    AOS.init();
+
+    // Ensure AOS refreshes after navigation
+    this.$watch('$route', () => {
+      AOS.refreshHard();
+    });
+  },
 };
 
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid d-none d-md-block">
+  <div data-aos="zoom-out" class="container-fluid d-none d-md-block">
     <h1>Dashboard</h1>
     <!-- Display images from manyFoods array with names and urls -->
     <div v-for="food in manyFoods" :key="food.gitHub" class="row x mySlides">
@@ -51,7 +51,7 @@
   <div class="container-fluid d-block d-md-none">
     <h1>Dashboard</h1>
     <!-- Single container to loop through food items -->
-    <div class="row" v-for="(food, index) in manyFoods" :key="food.gitHub"
+    <div class="row" v-for="(food, index) in manyFoods" :key="index"
       :style="{ display: sliderSmallIndex === index + 1 ? 'flex' : 'none' }">
       <!-- Image and Navigation Buttons -->
       <div class="col-12 pop imgDiv text-center">
@@ -102,6 +102,9 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import img1 from '@/assets/images/pokemon.png';
 import img2 from '@/assets/images/visio.png';
 import img3 from '@/assets/images/wordpress.png';
@@ -133,6 +136,12 @@ export default {
   mounted() {
     this.showSlides(this.slideIndex); // Initialize the first slide when the component is mounted
     this.showSlider(this.sliderSmallIndex);
+    AOS.init();
+
+    // Ensure AOS refreshes after navigation
+    this.$watch('$route', () => {
+      AOS.refreshHard();
+    });
   },
   methods: {
     plusSlides(n) {

@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
-        <img src="../assets/images/Dark Green Modern Initial Logo.png" loading="lazy" alt="logo">
+        <div class="img"><img src="../assets/images/Dark Green Modern Initial Logo.png" loading="lazy" alt="logo"></div>
       </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,5 +64,15 @@ nav {
 
 .navbar-toggler {
   border: none;
+}
+.img{
+  width: 4vw;
+  height: auto;
+  object-fit: contain;
+  margin: 2px;
+}
+.img>img{
+  height: 100%;
+  width: 100%;
 }
 </style>

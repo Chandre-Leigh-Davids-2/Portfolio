@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid d-none d-lg-block ">
+  <div data-aos="zoom-in" class="container-fluid d-none d-lg-block ">
     <!-- large screen -->
     <div class="d-flex justify-content-center ">
       <div class="row opacity ">
@@ -83,6 +83,9 @@
 </template>
 
 <script>
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default {
   data() {
     return {
@@ -95,15 +98,25 @@ export default {
       const hours = String(now.getHours()).padStart(2, '0');
       const minutes = String(now.getMinutes()).padStart(2, '0');
       const seconds = String(now.getSeconds()).padStart(2, '0');
-      this.currentTime = `${hours}:${minutes}:${seconds}`; // Fixed string template syntax
+      this.currentTime = `${hours}:${minutes}:${seconds}`;
     },
   },
   mounted() {
+    // Initialize AOS animations
+    AOS.init();
+
+    // Ensure AOS refreshes after navigation
+    this.$watch('$route', () => {
+      AOS.refreshHard();
+    });
+
+    // Start the clock
     this.updateTime();
-    setInterval(this.updateTime, 1000); // Update the time every second
+    setInterval(this.updateTime, 1000);
   },
 };
 </script>
+
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
