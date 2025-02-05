@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container-fluid">
       <router-link class="navbar-brand" to="/">
-        <img src="" loading="lazy" alt="logo">
+        <img src="../assets/images/Dark Green Modern Initial Logo.png" loading="lazy" alt="logo">
       </router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
