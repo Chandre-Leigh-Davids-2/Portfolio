@@ -81,7 +81,7 @@
                               class="lab la-github"></i></a>
                         </span>
                         <span>
-                          <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" title="click on me"><p>Chany4</p></a>
+                          <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" title="click on me"><p>Chandre-Leigh-Davids-2</p></a>
                         </span>
                       </div>
                     </li>
