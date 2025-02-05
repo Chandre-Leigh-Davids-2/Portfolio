@@ -109,14 +109,16 @@
                                 </li>
                             </ul>
                             <h3>Download CV</h3>
-                            <a href="">
+                            <a href="https://chandre-leigh-davids-2.github.io/Portfolio/src/assets/CV/Simple%20Professional%20CV%20Resume.pdf"
+                                target="_blank" download="Chandre-Leigh-Davids-CV">
                                 <div class="cv">
-
+                                    <img src="../assets/images/CV.png" alt="CV Image">
                                 </div>
                             </a>
+
                             <div class="col">
                                 <h3>Learn More </h3>
-                                <a href="">Click here</a>
+                                <router-link to="/LearnMore">Learn More</router-link>
                             </div>
                         </div>
                     </div>
@@ -591,9 +593,15 @@ img {
     text-decoration: 1px underline #3B5B43;
     transition: 0.1s ease-in-out;
 }
-.cv{
-    width: 15vw;
-    height: 20vh;
-    background-color: red;
+
+.cv {
+    width: 8vw;
+    height: 19vh;
+    margin-left: 2px;
+}
+
+.cv>img {
+    width: 100%;
+    height: 100%;
 }
 </style>
