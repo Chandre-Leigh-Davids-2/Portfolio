@@ -67,7 +67,7 @@
                               class="lab la-linkedin"></i></a>
                         </span>
                         <span>
-                          <a href="">
+                          <a href="linkedin.com/in/chandre-leigh-davids-50410a33b">
                             <p>Chandre Leigh Davids</p>
                           </a>
                         </span>
@@ -77,11 +77,11 @@
                       <div class="p">Github :</div>
                       <div class="info-container">
                         <span>
-                          <a href="https://github.com/Chany4" target="_blank" title="click on me"><i
+                          <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" title="click on me"><i
                               class="lab la-github"></i></a>
                         </span>
                         <span>
-                          <a href="https://github.com/Chany4" target="_blank" title="click on me"><p>Chany4</p></a>
+                          <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" title="click on me"><p>Chany4</p></a>
                         </span>
                       </div>
                     </li>
