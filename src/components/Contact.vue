@@ -63,11 +63,11 @@
                       <div class="p">Linked :</div>
                       <div class="info-container">
                         <span>
-                          <a href="linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank" title="click on me"><i
+                          <a href="https://www.linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank" title="click on me"><i
                               class="lab la-linkedin"></i></a>
                         </span>
                         <span>
-                          <a href="linkedin.com/in/chandre-leigh-davids-50410a33b">
+                          <a href="https://www.linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank">
                             <p>Chandre Leigh Davids</p>
                           </a>
                         </span>
