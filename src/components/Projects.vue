@@ -3,19 +3,23 @@
     <h1>Dashboard</h1>
     <!-- Display images from manyFoods array with names and urls -->
     <div v-for="food in manyFoods" :key="food.gitHub" class="row x mySlides">
-      <div class="d-flex justify-content-between">
-        <div class="github">
-          <a :href="food.gitHub" target="_blank"><i class="bi bi-github"></i></a>
+      <div>
+        <div class="d-flex justify-content-between">
+          <div class="github">
+            <a :href="food.gitHub" target="_blank"><i class="bi bi-github"></i></a>
+          </div>
+          <div class="live">
+            <a :href="food.live" target="_blank"><i class="bi bi-browser-chrome"></i></a>
+          </div>
         </div>
-        <div class="live">
-          <a :href="food.live" target="_blank"><i class="bi bi-browser-chrome"></i></a>
-        </div>
+        <img :src="food.url" loading="lazy" class="img1 abnf" />
         <div class="descrip">
           <a :href="food.description" target="_blank">hii</a>
         </div>
       </div>
-      <img :src="food.url" loading="lazy" class="img1 abnf" />
     </div>
+    <!-- Div footer -->
+    <div v-for="food in manyFoods" :key="food.gitHub" class="row x mySlides"></div>
     <!-- Prev/ Next -->
     <button class="prev" @click="changeSlide('prev')">&lt;</button>
     <button class="next" @click="changeSlide('next')">&gt;</button>
@@ -27,6 +31,23 @@
 
   </div>
 
+  <!-- Modal -->
+  <div v-if="showModal" class="modal" tabindex="-1" role="dialog" @click.self="closeModal">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ modalTitle }}</h5>
+        </div>
+        <div class="modal-body">
+          <p>{{ modalContent }}</p>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <p>{{ modalFooter }}</p>
+          <button type="button" class="btn btn-secondary" @click="closeModal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
   <!-- smaller screen size -->
@@ -148,10 +169,6 @@ export default {
       }
       this.showSlides(this.slideIndex); // Ensure that showSlides is called after updating slideIndex
     },
-
-
-
-
     // Show the current slider item for smaller screens
     showSlider(index) {
       // Ensure the index wraps around the available slides
@@ -320,6 +337,7 @@ h5 {
   max-width: fit-content;
   animation: zoomIn 0.6s ease-out;
 }
+
 .descrip {
   color: red;
   font-size: 2.5vh;
@@ -350,7 +368,7 @@ button {
 
 /* Position the "next button" to the right */
 .next {
-  right: 2.2%;
+  right: 9%;
   border-radius: 3px 0 0 3px;
 }
 

@@ -109,7 +109,11 @@
                                 </li>
                             </ul>
                             <h3>Download CV</h3>
-                            <p><a href="">View CV</a></p>
+                            <a href="">
+                                <div class="cv">
+
+                                </div>
+                            </a>
                             <div class="col">
                                 <h3>Learn More </h3>
                                 <a href="">Click here</a>
@@ -575,5 +579,21 @@ img {
     width: 25vw !important;
     /* Reduced width to allow horizontal scrolling */
     margin: 2px;
+}
+
+.info {
+    text-decoration: none;
+    color: #3B5B43;
+    transition: 0.1s ease-in-out;
+}
+
+.info:hover {
+    text-decoration: 1px underline #3B5B43;
+    transition: 0.1s ease-in-out;
+}
+.cv{
+    width: 15vw;
+    height: 20vh;
+    background-color: red;
 }
 </style>
