@@ -56,7 +56,7 @@
                       </div>
                     </li>
                     <li class="mt-3">
-                      <div class="p">Github :</div>
+                      <div class="p">LinkedIn :</div>
                       <div class="info-container">
                         <span>
                           <a href="linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank"><i
