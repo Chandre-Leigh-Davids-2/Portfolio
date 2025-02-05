@@ -20,12 +20,14 @@
                       <div class="p">Email :</div>
                       <div class="info-container">
                         <span>
-                          <a href="mailto:chandreleighdavids.17@gmail.com" target="_blank">
+                          <a href="mailto:chandreleighdavids.17@gmail.com" target="_blank" title="click on me">
                             <i class="las la-envelope"></i>
                           </a>
                         </span>
                         <span>
-                          <p>chandreleighdavids.17@gmail.com</p>
+                          <a href="mailto:chandreleighdavids.17@gmail.com" target="_blank" title="click on me">
+                            <p>chandreleighdavids.17@gmail.com</p>
+                          </a>
                         </span>
                       </div>
                     </li>
@@ -33,12 +35,12 @@
                       <div class="p">Phone Number :</div>
                       <div class="info-container">
                         <span>
-                          <a href="tel:+27733253129" target="_blank">
-                        <i class="las la-phone-volume"></i>
-                      </a>
+                          <a href="tel:+27733253129" target="_blank" title="click on me">
+                            <i class="las la-phone-volume"></i>
+                          </a>
                         </span>
                         <span>
-                          <p>+27 73 325 3129</p>
+                          <a href="tel:+27733253129" target="_blank" title="click on me"><p>+27 73 325 3129</p></a>
                         </span>
                       </div>
                     </li>
@@ -46,24 +48,28 @@
                       <div class="p">Location :</div>
                       <div class="info-container">
                         <span>
-                          <a href="https://maps.app.goo.gl/dcm884dmrj7SwmCK7" target="_blank">
-                        <i class="las la-map-marker-alt"></i>
-                      </a>
+                          <a href="https://maps.app.goo.gl/dcm884dmrj7SwmCK7" target="_blank" title="click on me">
+                            <i class="las la-map-marker-alt"></i>
+                          </a>
                         </span>
                         <span>
-                          <p>Rocklands, Mitchell's Plain</p>
+                          <a href="https://maps.app.goo.gl/dcm884dmrj7SwmCK7" target="_blank" title="click on me">
+                            <p>Rocklands, Mitchell's Plain</p>
+                          </a>
                         </span>
                       </div>
                     </li>
                     <li class="mt-3">
-                      <div class="p">LinkedIn :</div>
+                      <div class="p">Linked :</div>
                       <div class="info-container">
                         <span>
-                          <a href="linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank"><i
-                            class="lab la-linkedin"></i></a>
+                          <a href="linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank" title="click on me"><i
+                              class="lab la-linkedin"></i></a>
                         </span>
                         <span>
-                          <p>Chandre Leigh Davids</p>
+                          <a href="">
+                            <p>Chandre Leigh Davids</p>
+                          </a>
                         </span>
                       </div>
                     </li>
@@ -72,10 +78,10 @@
                       <div class="info-container">
                         <span>
                           <a href="https://github.com/Chany4" target="_blank" title="click on me"><i
-                            class="lab la-github"></i></a>
+                              class="lab la-github"></i></a>
                         </span>
                         <span>
-                          <p>Chany4</p>
+                          <a href="https://github.com/Chany4" target="_blank" title="click on me"><p>Chany4</p></a>
                         </span>
                       </div>
                     </li>
@@ -188,7 +194,7 @@ ul>li>p {
   font-size: 80%;
 }
 
-ul>li>div>span>p {
+ul>li>div>span>a>p {
   font-size: 80%;
 }
 
@@ -461,14 +467,17 @@ p {
 span {
   width: fit-content;
 }
+
 .info-container {
   display: flex;
-  align-items: center; /* Align items vertically */
-  gap: 8px; /* Adjust spacing between elements */
+  align-items: center;
+  /* Align items vertically */
+  gap: 8px;
+  /* Adjust spacing between elements */
 }
 
 .info-container p {
-  margin: 0; /* Remove default margin from <p> */
+  margin: 0;
+  /* Remove default margin from <p> */
 }
-
 </style>
