@@ -13,9 +13,6 @@
           </div>
         </div>
         <img :src="food.url" loading="lazy" class="img1 abnf" />
-        <div class="descrip">
-          <a :href="food.description" target="_blank">hii</a>
-        </div>
       </div>
     </div>
     <!-- Div footer -->
@@ -70,7 +67,7 @@
       </div>
 
       <!-- Description -->
-      <div class="col-7">
+      <div class="col-12">
         <div class="pop">
           <h5>Description</h5>
           <div class="p">
@@ -80,7 +77,7 @@
       </div>
 
       <!-- Live and GitHub Links -->
-      <div class="col-5">
+      <div class="col-12">
         <div class="box pop">
           <h5>View Live / Github Repo</h5>
           <div class="row d-flex justify-content-between mx-3">
@@ -117,11 +114,11 @@ export default {
       sliderSmallIndex: 1,
       // manyFoods is an array of objects with name and url
       manyFoods: [
-        { gitHub: "https://github.com/ImaraanSheldon/pokedex", url: img1, live: 'https://pokemon-beta-livid.vercel.app/', description: 'pokedex', status: 'complete' },
-        { gitHub: "https://github.com/Chandre-Leigh-Davids-2/VISIO", url: img2, live: 'https://visio-pearl.vercel.app/', description: 'visio', status: 'incomplete' },
-        { url: img3, live: 'https://dev-ecommerce-giftedmoments.pantheonsite.io/', description: 'gifted moments', status: 'minor adjustments required' },
-        { gitHub: "https://github.com/Chandre-Leigh-Davids-2/toDoList", url: img4, live: 'https://to-do-list-nu-blush.vercel.app/', description: 'toDoList', status: 'minor adjustments required' },
-        { gitHub: "https://github.com/Chandre-Leigh-Davids-2/calculator", url: img5, live: 'https://calculator-peach-iota-86.vercel.app/', description: 'calculator' }
+        { gitHub: "https://github.com/ImaraanSheldon/pokedex", url: img1, live: 'https://pokemon-beta-livid.vercel.app/', description: 'This is a pokedex that I created with my team using the Flask framework. We all had specific roles, and I helped with both the backened and frontend of the project. The project still has much room to improve but this is the result of what we initially planned.', status: 'complete' },
+        { gitHub: "https://github.com/Chandre-Leigh-Davids-2/VISIO", url: img2, live: 'https://visio-pearl.vercel.app/', description: 'I created a website for VISIO using only HTML,CSS and JavaScript. No framework and no CSS libraries were used.', status: 'complete' },
+        { url: img3, live: 'https://dev-ecommerce-giftedmoments.pantheonsite.io/', description: 'I created this using Wordpress during my Web Development learning journey at LC Studio. It has a pay and purchase system included and it fetches products from an API.', status: 'minor Adjustments needed' },
+        { gitHub: "https://github.com/Chandre-Leigh-Davids-2/toDoList", url: img4, live: 'https://to-do-list-nu-blush.vercel.app/', description: 'I created this as one of my first JavaScript projects at LC Academy.', status: 'complete' },
+        { gitHub: "https://github.com/Chandre-Leigh-Davids-2/calculator", url: img5, live: 'https://calculator-peach-iota-86.vercel.app/', description: 'This is a basic calculator that I built using JavaScript and HTML/CSS, at LC Academy.', status: 'complete' },
       ],
       // Corrected littleFoods array: each object now contains a unique url2
       littleFoods: [
@@ -376,5 +373,11 @@ button {
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
+}
+a{
+  color: #3B5B43;
+}
+.bi{
+  font-size: 3.5vh;
 }
 </style>

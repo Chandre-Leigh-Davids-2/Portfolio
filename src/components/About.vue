@@ -173,6 +173,8 @@ import mondale from '../assets/images/mondaleBadge.jpeg'
 import studio from '../assets/images/LC Studio.jpeg'
 import LCA from '../assets/images/LCA.jpeg'
 import UE from '../assets/images/UpperEdge.jpeg'
+import business from '../assets/images/business.jpg'
+
 export default {
     data() {
         return {
@@ -184,14 +186,14 @@ export default {
                 {
                     title: 'Mondale High School',
                     brief: 'This is where I completed my high school education.',
-                    content: 'This is where I completed my high school education.',
+                    content: 'I studied at Mondale High School. I learnt most of my communacative skills here. I majored in Pure Maths, Life Science and Accounting. ',
                     year: '2019 - 2023',
                     img: mondale,
                 },
                 {
                     title: 'Life Choices Academy',
                     brief: 'I attended Life Choices Academy 6 month bootcamp',
-                    content: 'A brief description about Life Choices Academy.',
+                    content: 'I attended Life Choices Academy 6 month bootcamp, where I built my foundation in Computer Science. I learnt HTML, CSS, JavaScript, Node.js, Vue.js and MySQL.',
                     year: 'April 2024 - September 2026',
                     img: LCA,
                 },
@@ -200,23 +202,23 @@ export default {
                 {
                     title: 'Upper Edge',
                     brief: 'I casualed and did filing and admin work',
-                    content: 'Details about my role at Upper Edge.',
+                    content: 'I casualed and did filing and admin work. My duties included: filing and packing. I worked alongside my employer to make sure all the files were up to date.',
                     year: 'December 2024 - March 2024',
                     img: UE,
                 },
                 {
                     title: 'LC Studio',
                     brief: 'I am currently interning at LC Studio',
-                    content: 'Web Dev and Software Dev',
+                    content: 'I completed my Web Development learning journey where I learnt Wordpress and SEO. I also sharpened my skills in JavaScript and now I am currently on my second learning journey which is Software Development',
                     year: 'September 2024 - present',
                     img: studio,
                 },
                 {
                     title: 'Prettier is Pink',
                     brief: 'I started and currently run my own business',
-                    content: 'I started and currently run my own business',
+                    content: 'I started and currently run my own business, where I sell bouquets and crafts as gifts',
                     year: 'October 2023 - present',
-                    img: studio,
+                    img: business,
                 }
             ],
         };
