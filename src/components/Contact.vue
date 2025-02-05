@@ -20,7 +20,7 @@
                       <div class="p">Email :</div>
                       <div class="info-container">
                         <span>
-                          <a href="mailto:chandreleighdavids04052005@gmail.com" target="_blank">
+                          <a href="mailto:chandreleighdavids.17@gmail.com" target="_blank">
                             <i class="las la-envelope"></i>
                           </a>
                         </span>
@@ -59,7 +59,7 @@
                       <div class="p">Github :</div>
                       <div class="info-container">
                         <span>
-                          <a href="https://www.linkedin.com/in/chandre-leigh-davids-872022318/" target="_blank"><i
+                          <a href="linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank"><i
                             class="lab la-linkedin"></i></a>
                         </span>
                         <span>
