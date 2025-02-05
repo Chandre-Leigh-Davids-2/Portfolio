@@ -37,7 +37,7 @@
       <img src="https://chany4.github.io/images.Portfolio/images/GitHub-Mark-ea2971cee799.png" alt="gitHub" id="gitPic">
     </a>
     <p>
-      Copyright &copy; <span>{{ cYear }}</span>Chandré Leigh Davids | All Rights Reserved.
+      Copyright &copy; <span>{{ cYear }}</span> Chandré Leigh Davids | All Rights Reserved.
     </p>
 
   </div>
