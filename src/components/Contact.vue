@@ -206,7 +206,7 @@ ul>li>div>span>a>p {
 }
 @media screen and (max-width:435px) {
   .email{
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 }
 label {
@@ -467,8 +467,6 @@ p {
   from {
     background: #5264ae;
   }
-
-
   to {
     width: 0;
     background: transparent;
