@@ -18,8 +18,12 @@
     <!-- Div footer -->
     <div v-for="food in manyFoods" :key="food.gitHub" class="row x mySlides"></div>
     <!-- Prev/ Next -->
-    <button class="prev" @click="changeSlide('prev')">&lt;</button>
-    <button class="next" @click="changeSlide('next')">&gt;</button>
+    <button class="prev" @click="changeSlide('prev')">
+      <div class="left"><img src="../assets/images/left.png" alt=""></div>
+    </button>
+    <button class="next" @click="changeSlide('next')">
+      <div class="right"><img src="../assets/images/right.png" alt=""></div>
+    </button>
     <br>
     <!-- Display images from littleFoods array -->
     <div v-for="food in littleFoods" :key="food.url2" class="row y myColumns">
@@ -58,10 +62,10 @@
         <img :src="food.url" alt="project image" class="img-fluid" />
         <div class="d-flex justify-content-center">
           <button class="btn previous" @click="changeSmallSlider('previous')">
-            &lt;
+            <div class="left"><img src="../assets/images/left.png" alt=""></div>
           </button>
           <button class="btn after" @click="changeSmallSlider('next')">
-            &gt;
+            <div class="right"><img src="../assets/images/right.png" alt=""></div>
           </button>
         </div>
       </div>
@@ -374,7 +378,7 @@ button {
 
 /* Position the "next button" to the right */
 .next {
-  right: 9%;
+  right: 8.1%;
   border-radius: 3px 0 0 3px;
 }
 
@@ -383,10 +387,34 @@ button {
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
-a{
+
+a {
   color: #3B5B43;
 }
-.bi{
+
+.bi {
   font-size: 3.5vh;
+}
+
+.left {
+  width: 8.5vw;
+}
+
+.right {
+  width: 8.5vw;
+}
+
+@media screen and (max-width: 768px) {
+  .left {
+    width: 11vw;
+  }
+  .right {
+    width: 11vw;
+  }
+  .previous,
+  .after {
+    bottom: 30%;
+  }
+
 }
 </style>

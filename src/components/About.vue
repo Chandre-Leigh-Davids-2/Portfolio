@@ -310,7 +310,7 @@ export default {
     }
 
     .soft::-webkit-scrollbar-thumb {
-        background-color: rgb(233, 207, 227);
+        background-color: white;
         /* Green thumb */
         border-radius: 10px;
     }
@@ -321,7 +321,7 @@ export default {
     }
 
     .soft::-webkit-scrollbar-track {
-        background-color: #f1f1f1;
+        background-color: transparent;
         /* Light grey track */
         border-radius: 10px;
     }
@@ -332,7 +332,7 @@ export default {
     }
 
     .status::-webkit-scrollbar-thumb {
-        background-color: rgb(233, 207, 227);
+        background-color: white;
         /* Orange thumb */
         border-radius: 10px;
     }
@@ -343,7 +343,7 @@ export default {
     }
 
     .status::-webkit-scrollbar-track {
-        background-color: #eee;
+        background-color: transparent;
         /* Lighter background for track */
         border-radius: 10px;
     }
@@ -354,7 +354,7 @@ export default {
     }
 
     .tech::-webkit-scrollbar-thumb {
-        background-color: rgb(233, 207, 227);
+        background-color: white;
         /* Blue thumb */
         border-radius: 10px;
     }
@@ -365,7 +365,7 @@ export default {
     }
 
     .tech::-webkit-scrollbar-track {
-        background-color: #fafafa;
+        background-color: transparent;
         /* Light grey track */
         border-radius: 10px;
     }
@@ -401,7 +401,8 @@ h1 {
 
 p,
 li {
-    color: white;
+    color: rgb(39, 39, 39);
+    margin-left:2px;
     font-family: "Poppins", serif;
 
 }

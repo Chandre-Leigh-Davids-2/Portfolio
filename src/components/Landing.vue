@@ -1,5 +1,5 @@
 <template>
-  <div data-aos="zoom-in" class="container-fluid d-none d-lg-block ">
+  <div class="container-fluid d-none d-lg-block ">
     <!-- large screen -->
     <div class="d-flex justify-content-center ">
       <div class="row opacity ">

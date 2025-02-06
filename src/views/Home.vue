@@ -65,7 +65,6 @@ export default {
 }
 
 #projects {
-  margin-top: 1%;
   padding-top: 1%;
   background-image: url('../assets/images/projetcs.png');
   background-repeat: no-repeat;
@@ -86,6 +85,7 @@ export default {
 }
 
 .Wrapper {
-  background-color: #E99532;
+  background-color: #F9E1B5;
+  overflow-x: hidden;
 }
 </style>
