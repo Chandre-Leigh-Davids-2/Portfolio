@@ -293,16 +293,31 @@ h2 {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 8vh;
     color: #3B5B43;
     font-family: "Orbitron", serif;
     font-weight: bold;
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 6vh;
     color: #aaa;
     font-family: "Poppins", serif;
+}
+
+@media screen and (max-width:650px) {
+    h1 {
+    font-size: 5vh;
+    color: #3B5B43;
+    font-family: "Orbitron", serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3vh;
+    color: #aaa;
+    font-family: "Poppins", serif;
+}
 }
 
 /* Cursor */
