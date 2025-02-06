@@ -18,20 +18,81 @@
                 </div>
             </div>
         </div>
+        <div class="container">
+            <h1 style="text-align: center;">Chandré Leigh Davids :
+                <span class="txt-type" data-wait="3000">
+                    <span class="txt">{{ txt }}</span>
+                </span>
+            </h1>
+            <h2 style="text-align: center;">Welcome To My Portfolio</h2>
+        </div>
     </div>
 </template>
+
 <script>
 export default {
+    data() {
+        return {
+            txt: '',          // The current text being typed
+            wordIndex: 0,     // The index for the current word
+            isDeleting: false, // If true, characters are being deleted
+            words: ['Aspiring Full Stack Developer'], // List of words to type
+            wait: 3000        // Wait time before deleting the text
+        };
+    },
+    methods: {
+        type() {
+            const current = this.wordIndex % this.words.length; // Current word index
+            const fullTxt = this.words[current]; // Full text of the current word
 
-}
+            if (this.isDeleting) {
+                // Remove one character
+                this.txt = fullTxt.substring(0, this.txt.length - 1);
+            } else {
+                // Add one character
+                this.txt = fullTxt.substring(0, this.txt.length + 1);
+            }
+
+            let typeSpeed = 200; // Default typing speed
+
+            if (this.isDeleting) {
+                typeSpeed /= 2; // Slow down when deleting
+            }
+
+            if (!this.isDeleting && this.txt === fullTxt) {
+                // If the word is fully typed, wait for a moment
+                typeSpeed = this.wait;
+                this.isDeleting = true;
+            } else if (this.isDeleting && this.txt === '') {
+                // If the word is deleted, move to the next word
+                this.isDeleting = false;
+                this.wordIndex++;
+                typeSpeed = 300;
+            }
+
+            // Call `type` method again after `typeSpeed` ms
+            setTimeout(this.type, typeSpeed);
+        }
+    },
+    mounted() {
+        // Start typing once the component is mounted
+        this.type();
+    }
+};
 </script>
+
 <style scoped>
-.row{
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* robot */
+.row {
     background-color: #000;
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
 }
+
 .modelViewPort {
     /* The black circle background around the model*/
     perspective: 1000px;
@@ -219,5 +280,33 @@ export default {
     100% {
         opacity: 0;
     }
+}
+
+.loader {
+    width: max-content;
+}
+
+h1,
+h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #3B5B43;
+    font-family: "Orbitron", serif;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #aaa;
+    font-family: "Poppins", serif;
+}
+
+/* Cursor */
+.txt-type>.txt {
+    border-right: 0.2rem solid white;
 }
 </style>

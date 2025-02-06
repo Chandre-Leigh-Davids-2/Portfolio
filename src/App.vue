@@ -30,7 +30,7 @@ export default {
   mounted() {
     setTimeout(() => {
       this.showSpinner = false;
-    }, 6000); // 6 seconds delay before hiding the spinner
+    }, 6800); // 6.8 seconds delay before hiding the spinner
   }
 };
 </script>
