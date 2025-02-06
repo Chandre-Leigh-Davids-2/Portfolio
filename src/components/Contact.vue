@@ -26,7 +26,7 @@
                         </span>
                         <span>
                           <a href="mailto:chandreleighdavids.17@gmail.com" target="_blank" title="click on me">
-                            <p>chandreleighdavids.17@gmail.com</p>
+                            <p class="email">chandreleighdavids.17@gmail.com</p>
                           </a>
                         </span>
                       </div>
@@ -183,6 +183,7 @@ h1 {
 p {
   font-family: "Poppins", serif;
   font-size: 3vh;
+  text-wrap: wrap;
 }
 
 /* new styles */
@@ -200,15 +201,14 @@ i:hover {
   scale: 1.5;
   color: rgb(85, 85, 85);
 }
-
-ul>li>p {
-  font-size: 80%;
-}
-
 ul>li>div>span>a>p {
   font-size: 80%;
 }
-
+@media screen and (max-width:435px) {
+  .email{
+  font-size: 2.5vw;
+}
+}
 label {
   width: 92%;
 }
