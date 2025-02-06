@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="row d-flex justify-content-center align-content-center">
         <div class="loader">
             <div class="modelViewPort">
                 <div class="eva">
@@ -18,7 +18,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </template>
 <script>
@@ -27,6 +26,12 @@ export default {
 }
 </script>
 <style scoped>
+.row{
+    background-color: #000;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
 .modelViewPort {
     /* The black circle background around the model*/
     perspective: 1000px;

@@ -9,7 +9,7 @@
     </section>
 
     <section class="section" id="projects">
-      <PrpjectsComp />
+      <ProjectsComp />
     </section>
 
 
@@ -17,16 +17,12 @@
       <ContactComp />
     </section>
 
-    <section class="section" id="footer">
-      <FooterComp />
-    </section>
-
   </div>
 </template>
 <script>
 import LandingComp from '@/components/Landing.vue'
 import AboutComp from '@/components/About.vue'
-import PrpjectsComp from '@/components/Projects.vue'
+import ProjectsComp from '@/components/Projects.vue'
 import ContactComp from '@/components/Contact.vue'
 import FooterComp from '@/components/Footer.vue'
 
@@ -36,7 +32,7 @@ export default {
   components: {
     LandingComp,
     AboutComp,
-    PrpjectsComp,
+    ProjectsComp,
     ContactComp,
     FooterComp,
   }
@@ -76,6 +72,7 @@ export default {
 
 #contact {
   padding-top: 1%;
+  padding-bottom: 2%;
   background-image: url('../assets/images/certifcates.png');
   background-repeat: no-repeat;
   background-position: center center;

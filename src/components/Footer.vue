@@ -1,5 +1,5 @@
 <template>
-  <div class="slider col-12 mt-3">
+  <div class="slider col-12">
     <div class="logos">
       <i class="lab la-github"></i>
       <i class="las la-code"></i>
