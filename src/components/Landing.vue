@@ -26,7 +26,7 @@
                 <p class="name">Chandre Leigh Davids</p>
                 <div class="box d-flex justify-content-start">
                   <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" class="mx-3"><i class="bi bi-github"></i></a>
-                  <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://www.linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
