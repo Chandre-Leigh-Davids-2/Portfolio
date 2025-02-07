@@ -63,7 +63,7 @@ h1 {
 }
 
 .certificate {
-    width: 42vw;
+    width: 100%;
     height: 48vh;
 }
 
