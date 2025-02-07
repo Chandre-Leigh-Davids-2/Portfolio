@@ -20,6 +20,7 @@
                         <div class="col skill"><span>Python</span></div>
                         <div class="col skill"><span>Wordpress</span></div>
                         <div class="col skill"><span>SEO</span> </div>
+                        <div class="col skill"><span>SCRUM</span> </div>
                     </div>
                 </div>
                 <div class="box pop soft">
@@ -159,6 +160,7 @@
                             <button class="badge"><img src="../assets/images/JSE2.png" alt=""></button>
                             <button class="badge"><img src="../assets/images/python.png" alt=""></button>
                             <button class="badge"><img src="../assets/images/python.png" alt=""></button>
+                            <button class="badge"><img src="../assets/images/UIUX.png" alt=""></button>
                         </div>
                     </div>
                 </div>
@@ -212,7 +214,7 @@ export default {
                 {
                     title: 'LC Studio',
                     brief: 'I am currently interning at LC Studio',
-                    content: 'I completed my Web Development learning journey where I learnt Wordpress and SEO. I also sharpened my skills in JavaScript and now I am currently on my second learning journey which is Software Development',
+                    content: 'I completed my Web Development learning journey where I learnt Wordpress and SEO. I also sharpened my skills in JavaScript and now I am currently on my second learning journey which is Software Development. Whikst at Studio we learnt about SCRUM methodologies, hence I have an understanding of the Agile Methodologies',
                     year: 'September 2024 - present',
                     img: studio,
                 },
