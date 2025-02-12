@@ -161,6 +161,7 @@
                             <button class="badge"><img src="../assets/images/python.png" alt=""></button>
                             <button class="badge"><img src="../assets/images/python.png" alt=""></button>
                             <button class="badge"><img src="../assets/images/UIUX.png" alt=""></button>
+                            <button class="badge"><img src="../assets/images/WordPressBadge.png" alt=""></button>
                         </div>
                     </div>
                 </div>
