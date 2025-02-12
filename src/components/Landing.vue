@@ -25,8 +25,10 @@
               <div class="m">
                 <p class="name">Chandre Leigh Davids</p>
                 <div class="box d-flex justify-content-start">
-                  <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" class="mx-3"><i class="bi bi-github"></i></a>
-                  <a href="https://www.linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank"><i class="bi bi-linkedin"></i></a>
+                  <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" class="mx-3"><i
+                      class="bi bi-github"></i></a>
+                  <a href="https://www.linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank"><i
+                      class="bi bi-linkedin"></i></a>
                 </div>
               </div>
             </div>
@@ -70,9 +72,11 @@
         </div>
       </div>
       <div class="d-block d-lg-none d-flex justify-content-center">
-        <div class="box d-flex justify-content-center">
-          <i class="bi bi-github"></i>
-          <i class="bi bi-linkedin"></i>
+        <div class="box d-flex justify-content-start">
+          <a href="https://github.com/Chandre-Leigh-Davids-2/" target="_blank" class="mx-3"><i
+              class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/chandre-leigh-davids-50410a33b" target="_blank"><i
+              class="bi bi-linkedin"></i></a>
         </div>
       </div>
       <div class="my-3">
@@ -177,7 +181,7 @@ p {
   margin: 2%;
   color: white;
   font-family: "Orbitron", serif;
-  font-size: 7vw; 
+  font-size: 7vw;
 }
 
 .name {
